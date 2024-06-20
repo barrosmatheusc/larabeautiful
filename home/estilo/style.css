@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+/* VARIÁVEIS PARA CORES */
+:root {
+    --cor1: #592B1B;
+    --cor2: #A67360;
+    --cor3: #BF907E;
+    --cor4: #F2C1AE;
+    --cor5: #000101;
+
+    --fonte-padrao: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-titulo: "Julius Sans One", sans-serif;
+    --fonte-destaque: "Cormorant Upright", serif;
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CORPO */
+body {
+    width: 100%;
+    margin: 0px;
+    background-color: var(--cor4);
+    padding: 0px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* MENU */
+}
+
+header{
+    width: 100%;
+    background-color: white;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 1px 1px 7px #0001013a;
+    
+}
+
+.logo-contato {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header .logo-contato {
+    width: 100%;
+}
+
+#instagram-logo {
+    max-height: 60px; /* Redimensiona os ícones para dispositivos móveis */
+}
+
+#logowhatsapp {
+    margin-top: 10px;
+    max-height: 40px;
+}
+
+/* LOGO */
+#logolara {
+    height: 70PX;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logolaradiv {
+    height: 50px;
+    left: auto;
+}
+
+/* titulo lara veiga nail designer */
+#laravtitulo1 {
+    max-width: 100%;
+    font-size: 2em; /* Reduz o tamanho do título para dispositivos móveis */
+    padding: 10px 0;
+}
+
+/* NAVEGAÇÃO MENU */
+
+#menunav {
+    text-align: center;
+    max-width: 100%;
+}
+
+#menunav a {
+    width: 100px;
+    padding: 2px 15px 2px 15px;
+    font-weight: bold;
+    color: var(--cor2);
+    border-radius: 5px;
+    margin: 0 40px 0 40px;
+    transition-duration: 0.3s;
+}
+
+#menunav a:hover {
+    background-color: var(--cor2);
+    color: white;
+}
+
+/* CADA INTEM DO MENU */
+.itens-menu {
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    color: black;
+}
+
+/* toda partde de cima (nome e logo) */
+.cabeçalho {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 0 0;
+    align-content: center;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+#box-carrossel {
+    margin: 200px 0 0 0px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 0px 5px 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Ou a largura desejada */
+    height: 300px; /* Ou a altura desejada */
+    z-index: 1;
+}
+
+#photos-rolando {
+    display: flex;
+    animation: slide 10s linear; /* Ajuste a duração conforme necessário */
+}
+
+#photos-rolando img {
+    width: 100%;
+}
+
+#photos-rolando p {
+    flex: 0 0 100%; /* Para cada foto ocupar 100% da largura do contêiner */
+}
+
+/* Animação */
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.box-carrossel > div > img {
+    width: 300px;
+    height: 100%;
+}
+
+/* menus */
+.mains {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    height: auto;
+    max-width: 1000px;
+    min-width: 400px;
+    margin: 30px auto;
+    padding: 20px
+    
+}
+
+.titulo-h1 {
+    font-family: "Julius Sans One", sans-serif;
+    color: var(--cor2);
+    text-align: center;
+    font-size: 30px;
+}
+
+main > h2 {
+    font-size: 20px;
+    margin: 25px 0 25px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+main > h2 > strong {
+    font-family: "Julius Sans One", sans-serif;
+    color: var(--cor3);
+}
+
+nav > div > h3 {
+    color: var(--cor2);
+}
+
+/* navegador serviços que ela faz */
+#serviços-lara {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* titulos do serviços */
+.serviços {
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 100%;
+    width: 33%;    
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+#nail-titulo {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+#sobrancelhas-titulo {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.detalhes-serviços {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+main > div p {
+    width: 100%;
+}
+
+.botoes {
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    color: var(--cor1);
+    text-decoration: none;
+    border: solid 1px var(--cor3);
+    border-radius: 10px;
+    background-color:  transparent;
+}
+
+.botoes:hover {
+    color: white;
+    background-color: var(--cor4);
+}
+
+#box-feedbacks {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px 0px 5px 0px;
+    margin: 20px 0px;
+    width: 100%; /* Ou a largura desejada */
+    height: 300px; /* Ou a altura desejada */
+}
+
+#rodapealto {
+    background-color: white;
+    display: flex;
+    width: auto;
+    min-height: 130px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 30px 0 0 0;
+    padding: 40px;
+    bottom: 0; 
+
+}
+
+#negrito {
+    font-weight: bold;
+}
+
+
+#logowhatsapp-rodape {
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.rodape {
+    background-color: white;
+    color: #00010173;
+    font-size: 12px;
+    text-align: center;
+}
+
+.link-github {
+    color: #00010173;
+}
+
+@media (max-width: 450px) {
+
+    #menunav a {
+        width: 100px;
+        padding: 2px 10px;
+        border-radius: 5px;
+        margin: 0 auto 0 auto;
+        transition-duration: 0.3s;
+    }
+    
+    #menunav a:hover {
+        background-color: var(--cor2);
+        color: white;
+    }
+    
+    /* CADA INTEM DO MENU */
+    .itens-menu {
+        font-size: 0.8em;
+        padding: 0px 0px 0px 0px;
+        margin: auto 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    #instagram-logo {
+        max-height: 40px; /* Redimensiona os ícones para dispositivos móveis */
+    }
+    
+    #logowhatsapp {
+        margin-top: 5px;
+        max-height: 30px;
+    }
+
+    .nail-titulo p {
+        font-size: 0.6em;
+    }
+}
