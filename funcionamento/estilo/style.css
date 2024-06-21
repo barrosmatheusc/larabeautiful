@@ -52,7 +52,7 @@ header{
     height: 60px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
 }
 
 header .logo-contato {
@@ -144,8 +144,20 @@ header .logo-contato {
     padding: 20px
 }
 
+.menus {
+    background-color: white;
+    font-family: var(--fonte-titulo);
+    color: var(--cor2);
+    text-align: center;
+    border-radius: 10px;
+    height: auto;
+    max-width: 1000px;
+    min-width: 400px;
+    margin: 30px auto 30px auto;
+    padding: 20px
+}
+
 #dias-semana {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -155,13 +167,44 @@ main h1 {
 }
 
 #dias-semana h3 {
+    display: inline-block;
+    color: var(--cor1);
     margin: auto 30px;
 }
 
 #dias-semana p {
+    color: var(--cor2);
     font-weight: 600;
     margin: 20px auto;
     font-size: 0.8em;
+}
+
+#atendimento-func h3 {
+    margin: 20px;
+    color: var(--cor1);
+}
+
+#atendimento-func a {
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    color: var(--cor1);
+    text-decoration: none;
+    border: solid 1px var(--cor3);
+    border-radius: 10px;
+    background-color:  transparent;
+}
+
+#atendimento-func a:hover {
+        color: white;
+        background-color: var(--cor4);
+}
+
+#mapa h1 {
+    margin-bottom: 3%;
+}
+
+#mapalink {
+    width: 80%;
 }
 
 
@@ -198,6 +241,9 @@ main h1 {
     color: #00010173;
 }
 
+.link-github:hover {
+    color: #000000;
+}
 
 @media (max-width: 450px) {
 

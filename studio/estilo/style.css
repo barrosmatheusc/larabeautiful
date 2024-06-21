@@ -52,7 +52,7 @@ header{
     height: 60px;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px 0 20px 0;
 }
 
 header .logo-contato {
@@ -224,10 +224,9 @@ main > div p {
     color: #00010173;
 }
 
-
-
-
-
+.link-github:hover {
+    color: #000000;
+}
 
 @media (max-width: 450px) {
 
