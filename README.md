@@ -1,3 +1,3 @@
 # larabeautiful
  Site Lara
-github.com/barrosmatheusc/larabeautiful/home/index.html
+(https://barrosmatheusc.github.io/larabeautiful/home/)
