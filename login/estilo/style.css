@@ -131,61 +131,83 @@ header .logo-contato {
     margin: 0px 0px 0px 0px;
 }
 
-.mains {
+
+/* toda partde de cima (nome e logo) */
+.menu {
     background-color: white;
     font-family: var(--fonte-titulo);
     color: var(--cor2);
     text-align: center;
     border-radius: 10px;
     height: auto;
-    max-width: 1000px;
+    max-width: 500px;
     min-width: 400px;
     margin: 230px auto 30px auto;
     padding: 20px
 }
 
-.menus {
-    background-color: white;
-    font-family: var(--fonte-titulo);
-    color: var(--cor2);
-    text-align: center;
+.menu h3 {
+    padding: 20px;
+    color: var(--cor1);
+}
+
+.menu a  {
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+.menu a:hover {
+    color: red;
+}
+
+
+.checkbox {
+    color: #000000;
+    font-family: var(--fonte-padrao);
+    display: inline-flex;
+    border: transparent;
+    background-color: transparent;
+    font-size: 10px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.checkbox:active {
+    color: red;
+}
+
+#login {
+    padding: 10px;
     border-radius: 10px;
-    height: auto;
-    max-width: 1000px;
-    min-width: 400px;
-    margin: 30px auto 30px auto;
-    padding: 20px
+    width: 50%;
+    font-size: 0.7em;
+    text-align: center;
+    text-decoration: none;
 }
 
-#dias-semana {
-    align-items: center;
-    justify-content: center;
+#password {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 0.7em;
 }
 
-main h1 {
-    margin: 20px;
+.mostrarsenha {
+    display: inline-flex;
+    
 }
 
-#dias-semana h3 {
-    display: inline-block;
-    color: var(--cor1);
-    margin: auto 30px;
+input[type="checkbox"] {
+    width: 20px;    
+    padding-top: 20px;
+    border: solid 2px black;
 }
 
-#dias-semana p {
-    color: var(--cor2);
-    font-weight: 600;
-    margin: 20px auto;
-    font-size: 0.8em;
-}
-
-#atendimento-func h3 {
-    margin: 20px;
-    color: var(--cor1);
-}
-
-#atendimento-func a {
-    margin-bottom: 20px;
+.botoes {
+    margin: 20px 20px 20px 110px ;
     padding: 5px 20px;
     color: var(--cor1);
     text-decoration: none;
@@ -194,18 +216,11 @@ main h1 {
     background-color:  transparent;
 }
 
-#atendimento-func a:hover {
-        color: white;
-        background-color: var(--cor4);
+.botoes:hover {
+    color: white;
+    background-color: var(--cor4);
 }
 
-#mapa h1 {
-    margin-bottom: 3%;
-}
-
-#mapalink {
-    width: 80%;
-}
 
 
 #rodapealto {
@@ -277,12 +292,4 @@ main h1 {
         margin-top: 5px;
         max-height: 30px;
     }
-
-    #dias-semana {
-        display: block;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    
 }

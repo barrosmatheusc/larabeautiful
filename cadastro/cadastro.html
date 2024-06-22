@@ -43,46 +43,33 @@
 
     </header>
 
-    <main id="horarios" class="mains">
-        <h1>Horário de funcionamento</h1>
-        <br>
-        <div id="dias-semana">
-            <h3>Segunga
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Terça
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Quarta
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Quinta
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Sexta
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Sábado
-                <p>8:00 às 12:00</p>
-            </h3>
+    <main class="menu">
+        <div>
+            <h3>Cadastro de cliente</h3>
+            <div>
+                <h4>Nome Completo</h4>
+                <input type="text" placeholder="Nome Completo">
+            </div>
+            <div>
+                <h4>Email</h4>
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </div>
+            <div>
+                <h4>Data de nascimento</h4>
+                <input type="date" name="Data" id="data" placeholder="Digite a data de seu aniversário">
+            </div>
+            <div>
+                <h4>Digite sua senha</h4>
+                <input type="password" placeholder="Digite sua senha" id="senha">
+                <button onclick="showsenha()" class="checkbox"  > Ver senha</button>
+            </div>    
+            <div>
+                <h4>Confirme sua senha</h4>
+                <input type="password" placeholder="Digite sua senha" id="confirmar-senha">
+                <button onclick="confirmacao()" class="checkbox"  > Ver senha</button>
+            </div>
         </div>
 
-    </main>
-
-    <main class="menus">
-        <div id="atendimento-func">
-            <h1>Atendimento apenas com horário agendado</h1>
-            <h3>Agende seu horário</h3>
-            <a href="#">Clique aqui</a>
-        </div>
-
-    </main>
-
-    <main class="menus">
-        <div id="mapa">
-            <h1>LOCALIZAÇÃO DO STUDIO</h1>
-            <iframe id="mapalink" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1968.0323219034788!2d-36.6340547!3d-9.4157292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7065fbc54bbd009%3A0x6124c28131f0b6a9!2sR.%20Manoel%20Augusto%20dos%20Santos%2C%20155%20-%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%2C%20Palmeira%20dos%20%C3%8Dndios%20-%20AL%2C%2057601-160!5e0!3m2!1spt-BR!2sbr!4v1718822510567!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </main>
 
     <footer>
@@ -105,5 +92,25 @@
     </footer>
 
 </body>
+    <script>
 
+        function showsenha() {
+            const senhaInput = document.getElementById('senha');
+            if (senhaInput.type === 'password') {
+                senhaInput.type = 'text';
+            } else {
+                senhaInput.type = 'password';
+            }
+        }
+
+
+        function confirmacao() {
+            const senhaInput = document.getElementById('confirmar-senha');
+            if (senhaInput.type === 'password') {
+                senhaInput.type = 'text';
+            } else {
+                senhaInput.type = 'password';
+            }
+        }
+    </script>
 </html>

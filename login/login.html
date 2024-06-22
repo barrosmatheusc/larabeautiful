@@ -43,45 +43,19 @@
 
     </header>
 
-    <main id="horarios" class="mains">
-        <h1>Horário de funcionamento</h1>
-        <br>
-        <div id="dias-semana">
-            <h3>Segunga
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Terça
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Quarta
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Quinta
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Sexta
-                <p>9:00 às 18:00</p>
-            </h3>
-            <h3>Sábado
-                <p>8:00 às 12:00</p>
-            </h3>
+    <main class="menu">
+        <div>
+            <h3>Login</h3>
+            <input type="text" placeholder="Digite o número do celular" name="Login" id="login">
+            <h3>Senha</h3>
+                <input type="password" placeholder="Digite sua senha" id="password">
+                <button onclick="checkbox()" class="checkbox">ver senha</button>
+                <br>
+                <button class="botoes" type="submit">Entrar</button>
+                <a href="../cadastro/cadastro.html"><label class="mostrarsenha" for="text">Cadastre-se</label></a>
         </div>
-
-    </main>
-
-    <main class="menus">
-        <div id="atendimento-func">
-            <h1>Atendimento apenas com horário agendado</h1>
-            <h3>Agende seu horário</h3>
-            <a href="#">Clique aqui</a>
-        </div>
-
-    </main>
-
-    <main class="menus">
-        <div id="mapa">
-            <h1>LOCALIZAÇÃO DO STUDIO</h1>
-            <iframe id="mapalink" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1968.0323219034788!2d-36.6340547!3d-9.4157292!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7065fbc54bbd009%3A0x6124c28131f0b6a9!2sR.%20Manoel%20Augusto%20dos%20Santos%2C%20155%20-%20S%C3%A3o%20Crist%C3%B3v%C3%A3o%2C%20Palmeira%20dos%20%C3%8Dndios%20-%20AL%2C%2057601-160!5e0!3m2!1spt-BR!2sbr!4v1718822510567!5m2!1spt-BR!2sbr" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div>
+            <button>Cadastre-se</button>
         </div>
     </main>
 
@@ -105,5 +79,15 @@
     </footer>
 
 </body>
+    <script>
 
+        function checkbox() {
+            const senhaInput = document.getElementById('password');
+            if (senhaInput.type === 'password') {
+                senhaInput.type = 'text';
+            } else {
+                senhaInput.type = 'password';
+            }
+        }
+    </script>
 </html>
