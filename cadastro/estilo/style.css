@@ -131,6 +131,9 @@ header .logo-contato {
     margin: 230px auto 30px auto;
     padding: 40px
 }
+.menu input {
+    border-color: var(--cor4);
+}
 
 .menu h3 {
     padding: 20px;
@@ -167,7 +170,7 @@ header .logo-contato {
 
 .botoes {
     margin: 20px;
-    padding: 5px 20px;
+    padding: 5px 15px;
     color: var(--cor1);
     text-decoration: none;
     border: solid 1px var(--cor3);

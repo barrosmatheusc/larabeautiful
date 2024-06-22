@@ -146,6 +146,10 @@ header .logo-contato {
     padding: 20px
 }
 
+.menu input {
+    border-color: var(--cor4);
+}
+
 .menu h3 {
     padding: 20px;
     color: var(--cor1);
@@ -196,7 +200,9 @@ header .logo-contato {
 }
 
 .mostrarsenha {
+    font-family: var(--fonte-padrao);
     display: inline-flex;
+    font-size: 0.8em;
     
 }
 

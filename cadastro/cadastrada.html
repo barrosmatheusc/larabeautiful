@@ -45,34 +45,10 @@
 
     <main class="menu">
         <div>
-            <h3>Cadastro de cliente</h3>
-            <div>
-                <h4>Nome Completo</h4>
-                <input type="text" placeholder="Nome Completo">
-            </div>
-            <div>
-                <h4>Email</h4>
-                <input type="email" name="email" id="email" placeholder="Digite seu email">
-            </div>
-            <div>
-                <h4>Data de nascimento</h4>
-                <input type="date" name="Data" id="data" placeholder="Digite a data de seu aniversário">
-            </div>
-            <div>
-                <h4>Digite sua senha</h4>
-                <input type="password" placeholder="Digite sua senha" id="senha">
-                <button onclick="showsenha()" class="checkbox"  > Ver senha</button>
-            </div>    
-            <div>
-                <h4>Confirme sua senha</h4>
-                <input type="password" placeholder="Digite sua senha" id="confirmar-senha">
-                <button onclick="confirmacao()" class="checkbox"  > Ver senha</button>
-            </div>
-            <div>
-                <a href="cadastrada.html"><button type="submit" class="botoes">Cadastrar</button></a>
-            </div>
+            <h2>CADASTRO REALIZADO COM SUCESSO!</h2>
+            <H4>Faça o login e agende seu horário.</H4>
+            <a class="botoes" href="../login/login.html">Login</a>
         </div>
-
     </main>
 
     <footer>
@@ -95,25 +71,5 @@
     </footer>
 
 </body>
-    <script>
 
-        function showsenha() {
-            const senhaInput = document.getElementById('senha');
-            if (senhaInput.type === 'password') {
-                senhaInput.type = 'text';
-            } else {
-                senhaInput.type = 'password';
-            }
-        }
-
-
-        function confirmacao() {
-            const senhaInput = document.getElementById('confirmar-senha');
-            if (senhaInput.type === 'password') {
-                senhaInput.type = 'text';
-            } else {
-                senhaInput.type = 'password';
-            }
-        }
-    </script>
 </html>
