@@ -44,16 +44,18 @@
     </header>
 
     <main class="menu">
-        <div>
-            <h3>Login</h3>
-            <input type="text" placeholder="Digite o número do celular" name="Login" id="login">
-            <h3>Senha</h3>
-                <input type="password" placeholder="Digite sua senha" id="password">
-                <button onclick="checkbox()" class="checkbox">ver senha</button>
-                <br>
-                <button class="botoes" type="submit">Entrar</button>
-                <a href="../cadastro/cadastro.html"><label class="mostrarsenha" for="text">Cadastre-se</label></a>
-        </div>
+        <form action="/Login" method="post">
+            <div>
+                <h3>Login</h3>
+                <input type="text" placeholder="Digite o número do celular" name="Login" id="login">
+                <h3>Senha</h3>
+                    <input type="password" name="senha" placeholder="Digite sua senha" id="password">
+                    <button onclick="checkbox()" class="checkbox">ver senha</button>
+                    <br>
+                    <button class="botoes" type="submit">Entrar</button>
+                    <a href="../cadastro/cadastro.html"><label class="mostrarsenha" for="text">Cadastre-se</label></a>
+            </div>
+        </form>
     </main>
 
     <footer>
@@ -76,15 +78,5 @@
     </footer>
 
 </body>
-    <script>
-
-        function checkbox() {
-            const senhaInput = document.getElementById('password');
-            if (senhaInput.type === 'password') {
-                senhaInput.type = 'text';
-            } else {
-                senhaInput.type = 'password';
-            }
-        }
-    </script>
+    <script src="login.js"></script>
 </html>
