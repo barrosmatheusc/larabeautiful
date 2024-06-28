@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Lara Beatiful</title>
     <link rel="stylesheet" href="estilo/style.css">
-    <script src="comandos.py"></script>
+    <script src="cadastro.js"></script>
 </head>
 
 <body>
@@ -57,6 +57,10 @@
                     <input type="email" name="email" id="email" placeholder="Digite seu email">
                 </div>
                 <div>
+                    <h4>Telefone</h4>
+                    <input type="email" name="telefone" onkeyup="formatartelefone(this)" id="telefone" maxlength="11" placeholder="Digite seu telefone">
+                </div>
+                <div>
                     <h4>Data de nascimento</h4>
                     <input type="date" name="Data" id="data" placeholder="Digite a data de seu aniversário">
                 </div>
@@ -98,25 +102,4 @@
     </footer>
 
 </body>
-    <script>
-
-        function showsenha() {
-            const senhaInput = document.getElementById('senha');
-            if (senhaInput.type === 'password') {
-                senhaInput.type = 'text';
-            } else {
-                senhaInput.type = 'password';
-            }
-        }
-
-
-        function confirmacao() {
-            const senhaInput = document.getElementById('confirmar-senha');
-            if (senhaInput.type === 'password') {
-                senhaInput.type = 'text';
-            } else {
-                senhaInput.type = 'password';
-            }
-        }
-    </script>
 </html>
