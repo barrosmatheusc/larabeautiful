@@ -1,3 +1,3 @@
 # larabeautiful
  Site Lara
-(https://barrosmatheusc.github.io/larabeautiful/home/)
+EM DESENVOLVIMENTO... (banco de dados e host)
