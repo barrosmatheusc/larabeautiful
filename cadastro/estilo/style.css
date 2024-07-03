@@ -161,7 +161,7 @@ header .logo-contato {
     font-size: 10px;
     position: absolute;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-left: -50px;
 }
 
 .checkbox:active {
